@@ -22,11 +22,12 @@ class TastList extends Controller
 
     public function addTask(Request $request){
         header("Access-Control-Allow-Origin: *");
+        header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
         $tasks = TaskModel::create($request->all());
         return response()->json($tasks, 201);
     } 
     public function editTask(Request $request, TaskModel $tasks){
-        header("Access-Control-Allow-Origin: *");
+        header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
         $tasks->update($request->all());
         return response()->json($tasks, 200);
     }
