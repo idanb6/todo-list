@@ -1,3 +1,11 @@
+<p align="center">create in mysql DB call "task"</p>
+<p align="center">do migrate -> php artisan migrate
+</p>
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
